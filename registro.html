@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+</head>
+<body style="background-color: #DAFB03FF">
+<section class="hero is-fullheight">
+    <div class="hero-body">
+        <div class="container has-text-centered">
+            <div class="column is-4 is-offset-4">
+                <div class="box" style="background-color: #DAFB03FF">
+                	<h3 class="title has-text-white">Registro</h3>
+                    <form method="post">
+                        <div class="field">
+                        	<p class="control has-icons-left has-icons-right">
+    							<input class="input" type="text" placeholder="Nombre" style="opacity: 0.7">
+    							<span class="icon is-small is-left">
+      								<i class="fa fa-user"></i>
+    							</span>
+  							</p>
+  						</div>
+                        <div class="field">
+                            <p class="control has-icons-left has-icons-right">
+                                <input class="input" type="text" placeholder="Apellido" style="opacity: 0.7">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-user"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left has-icons-right">
+                                <input class="input" type="text" placeholder="Correo electronico" style="opacity: 0.7" required>
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-envelope"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+    							<input class="input" type="password" placeholder="Contraseña" style="opacity: 0.7">
+    							<span class="icon is-small is-left">
+        							<i class="fa fa-lock"></i>
+    							</span>
+    						</p>
+                        </div>
+                        <div class="field">
+                            <p class="control has-icons-left">
+                                <input class="input" type="password" placeholder="Confirmar contraseña" style="opacity: 0.7">
+                                <span class="icon is-small is-left">
+                                    <i class="fa fa-lock"></i>
+                                </span>
+                            </p>
+                        </div>
+                        <button type="submit" class="button is-info" onclick="irLogin()">
+                            Registrarse
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript">
+    function irLogin() {
+        window.open("login.html")
+        close()
+    }
+</script>
+</body>
+</html>
